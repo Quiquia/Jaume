@@ -1,0 +1,60 @@
+@import "./button.css";
+@import "./button-icon.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./wrapper.css";
+@import "./menu.css";
+@import "./coment.css";
+@import "./card.css";
+@import "./project.css";
+@import "./social.css";
+@import "./footer.css";
+@import "./form.css";
+@import "./title.css";
+
+:root {
+  --fontBase: "Poppins", sans-serif;
+  --headline1: bold 95px/153px var(--fontBase);
+  --headline2: bold 59px/95px var(--fontBase);
+  --headline3: bold 48px/77px var(--fontBase);
+  --headline4: bold 34px/55px var(--fontBase);
+  --headline5: bold 24px/38px var(--fontBase);
+  --body: normal 24px/39px var(--fontBase);
+  --body1: normal 16px/25px var(--fontBase);
+  --body2: normal 14px/22px var(--fontBase);
+  --button: bold 14px/22px var(--fontBase);
+  --caption: normal 12px/19px var(--fontBase);
+  --gradient: radial-gradient(
+        41.48% 11.48% at 2.38% 8.52%,
+        #d6d7e4 0%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(135deg, #72edf2 0%, #5151e5 100%);
+  --purpel: #310a90;
+  --skyBlue: #42e2b8;
+  --gradient1: linear-gradient(135deg, #fad7a1 0%, #e96d71 100%);
+  --white: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: var(--gradient);
+  min-block-size: 100vh;
+  font: var(--caption);
+  color: var(--purpel);
+}
+
+p {
+  font: var(--body1);
+  margin: 0;
+}

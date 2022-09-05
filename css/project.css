@@ -1,0 +1,39 @@
+.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.project-image {
+  text-align: center;
+}
+
+.project-image img {
+  max-inline-size: 100%;
+}
+
+.project-descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .project {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .project-descripcion {
+    flex: 1;
+  }
+  .project-image {
+    flex: 1;
+  }
+
+  .project:nth-of-type(2n + 1) .project-image {
+    order: 2;
+    text-align: center;
+  }
+}

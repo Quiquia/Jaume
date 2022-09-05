@@ -1,0 +1,39 @@
+.coment {
+  text-align: center;
+}
+
+.comment-descripcion {
+  max-width: 328px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.comment-descripcion .comment-descripcion-span {
+  font: var(--body);
+}
+
+.comment-descripcion span:nth-last-child(2) {
+  font: var(--headline5);
+}
+
+.comment-descripcion a img {
+  inline-size: 80px;
+  block-size: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-descripcion {
+    max-width: 900px;
+    width: auto;
+    padding-block-start: 200px;
+    padding-block-end: 200px;
+  }
+  .comment-descripcion .comment-descripcion-span {
+    font: 300 34px/55px "Oxygen", sans-serif;
+  }
+}
